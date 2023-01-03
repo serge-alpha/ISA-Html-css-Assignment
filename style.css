@@ -1,0 +1,107 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+
+}
+.nav-bar li,a{
+	text-decoration: none;
+	display: inline;
+	padding:60px 30px;
+	color: white;
+}
+.nav-bar{
+	text-align: center;
+	margin:auto;
+	padding: 20px 0px;
+	border-bottom: 1px solid white;
+	background-color: brown;
+}
+h2{
+	text-align: center;
+	margin-top: 70px;
+}
+	
+.row{
+	margin:auto;
+	padding: 20px 60px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	grid-gap: 20px;
+	justify-content: center;
+	max-width: 1400px;
+}
+.cells img{
+	max-width: 350px;
+	width: 350px;
+	height: 300px;
+	object-fit: cover;
+	margin-bottom: 0;
+}
+.cells{
+	border: 1px solid black;
+	color: white;
+	max-width: 350px;
+	background-color: brown;
+	text-align: center;
+	padding: 60px 0;
+}
+footer{
+	width: 100%;
+	display: flex;
+	grid-gap: 50px;
+	background-color: brown;
+	justify-content: center;
+	padding: 5px 0px;
+}
+.foot-link li,a{
+	display: inline;
+	padding:1px 3px;
+	
+}
+.foot-link li{
+	border-right: 1px solid white; 
+}
+.foot-link ul{
+	min-width: 450px;
+	float: left;
+	margin: 100px 5px;
+}
+.contact{
+	min-width: 200px;
+	color: white;
+	margin-top: 50px;
+	text-align: center;
+}
+.about{
+	max-width: 240px;
+	color: white;
+	margin-top: 30px;
+	text-align: center;
+}
+@media screen and (max-width: 1000px) {
+ 	.row{
+ 		display: flex;
+ 		flex-direction: column;
+ 		justify-content: center;
+ 	}
+ 	.cells img{
+	max-width: 350px;
+	width: 350px;
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: 0;
+	}
+	.cell{
+		text-align: center;
+		font-size: 0.7rem;
+		max-width: 350px;
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
